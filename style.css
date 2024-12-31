@@ -21,19 +21,28 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center; /* Ensures items are aligned vertically in the container */
 }
+
+.stats-container:hover {
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    box-shadow: 0 0 30px lightblue; /* Adds a glowing blue shadow effect on hover */
+}
+
 
 .stats-card {
     background-color: #a8b0bc;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    
 }
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+    text-align: center;
+    padding: 10%;
 }
 
 #games-container {
